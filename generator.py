@@ -23,13 +23,14 @@ def WriteQuestionsToFile(path, title, questions, display_q = True, display_a = T
 
 NUMBER_OF_QUESTIONS_PER_SET = 20
 NUMBER_OF_SETS = 5
-GENERATE_ALL = False
+GENERATE_ALL = True
 REPLACEMENT_ENABLED = False
 QUESTIONS_WITH_ANSWERS = False
 
 source_file = open("source.md", "r")
 source_lines = [r'' + line.rstrip('\n') for line in source_file]
 source_file.close()
+source_lines.append("### Question")
 
 all_questions = []
 
@@ -63,7 +64,14 @@ os.makedirs(timestamp_string, exist_ok=True)
 file_path = os.path.join(timestamp_string, 'All Questions - Fundamentals of Visual Computing.md')
 
 if GENERATE_ALL:
-    WriteQuestionsToFile(file_path, "Fundamentals of Visual Computing", all_questions)
+    if QUESTIONS_WITH_ANSWERS:
+        file_path = os.path.join(timestamp_string, f"Fundamentals of Visual Computing.md")
+        WriteQuestionsToFile(file_path, f"Fundamentals of Visual Computing", all_questions)
+    else:
+        file_path_q = os.path.join(timestamp_string, f"Questions - Fundamentals of Visual Computing.md")
+        WriteQuestionsToFile(file_path_q, f"Questions - Fundamentals of Visual Computing", all_questions, True, False)
+        file_path_a = os.path.join(timestamp_string, f"Answers - Fundamentals of Visual Computing.md")
+        WriteQuestionsToFile(file_path_a, f"Answers - Fundamentals of Visual Computing", all_questions, False, True)
 else:
     if REPLACEMENT_ENABLED or NUMBER_OF_QUESTIONS_PER_SET * NUMBER_OF_SETS <= len(all_questions):
         for i in range(1, NUMBER_OF_SETS + 1):
