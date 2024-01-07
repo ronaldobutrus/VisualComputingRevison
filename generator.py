@@ -21,11 +21,11 @@ def WriteQuestionsToFile(path, title, questions, display_q = True, display_a = T
         file.write(f"#### *[This question was from {questions[i].chapter}]*\n<hr>\n\n")
     file.close()
 
-NUMBER_OF_QUESTIONS_PER_SET = 10
-NUMBER_OF_SETS = 2
+NUMBER_OF_QUESTIONS_PER_SET = 20
+NUMBER_OF_SETS = 5
 GENERATE_ALL = False
 REPLACEMENT_ENABLED = False
-QUESTIONS_WITH_ANSWERS = True
+QUESTIONS_WITH_ANSWERS = False
 
 source_file = open("source.md", "r")
 source_lines = [r'' + line.rstrip('\n') for line in source_file]
