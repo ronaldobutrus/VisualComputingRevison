@@ -682,7 +682,7 @@ $F[k+N]=F[k]$
 ### Question
 What is the *cyclical convolution* formula for the Discrete Fourier Transform?
 ### Answer
-$$(f\ast g)[n]=\sum_{m=0}^{N-1}f[m]f[n-m]$$
+$$(f\ast g)[n]=\sum_{m=0}^{N-1}f[m]g[n-m]$$
 ### Question
 How can the Discrete Fourier Transform be generalised to n-D functions?
 ### Answer
