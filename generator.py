@@ -10,20 +10,19 @@ class QuestionAnswer:
         self.answer = answer
         self.chapter = chapter
 
-def WriteQuestionsToFile(path, title, questions, display_q = True, display_a = True):
+def WriteQuestionsToFile(path, title, questions, display_a = True):
     file = open(path, "w")
     file.write("# " + title + "\n")
     for i in range(len(questions)):
-        if display_q:
-            file.write(f"### Question {i+1}\n{questions[i].question}\n")
+        file.write(f"### Question {i+1}\n{questions[i].question}\n")
         if display_a:
-            file.write(f"#### Answer:\n{questions[i].answer}\n")
+            file.write(f"#### Answer {i+1}:\n{questions[i].answer}\n")
         file.write(f"#### *[This question was from {questions[i].chapter}]*\n<hr>\n\n")
     file.close()
 
 NUMBER_OF_QUESTIONS_PER_SET = 20
-NUMBER_OF_SETS = 5
-GENERATE_ALL = True
+NUMBER_OF_SETS = 13
+GENERATE_ALL = False
 REPLACEMENT_ENABLED = False
 QUESTIONS_WITH_ANSWERS = False
 
@@ -69,9 +68,9 @@ if GENERATE_ALL:
         WriteQuestionsToFile(file_path, f"Fundamentals of Visual Computing", all_questions)
     else:
         file_path_q = os.path.join(timestamp_string, f"Questions - Fundamentals of Visual Computing.md")
-        WriteQuestionsToFile(file_path_q, f"Questions - Fundamentals of Visual Computing", all_questions, True, False)
+        WriteQuestionsToFile(file_path_q, f"Questions - Fundamentals of Visual Computing", all_questions, False)
         file_path_a = os.path.join(timestamp_string, f"Answers - Fundamentals of Visual Computing.md")
-        WriteQuestionsToFile(file_path_a, f"Answers - Fundamentals of Visual Computing", all_questions, False, True)
+        WriteQuestionsToFile(file_path_a, f"Answers - Fundamentals of Visual Computing", all_questions, True)
 else:
     if REPLACEMENT_ENABLED or NUMBER_OF_QUESTIONS_PER_SET * NUMBER_OF_SETS <= len(all_questions):
         for i in range(1, NUMBER_OF_SETS + 1):
@@ -84,6 +83,6 @@ else:
                 WriteQuestionsToFile(file_path, f"Question Set {i} - Fundamentals of Visual Computing", questions)
             else:
                 file_path_q = os.path.join(timestamp_string, f"Question Set {i} - Fundamentals of Visual Computing.md")
-                WriteQuestionsToFile(file_path_q, f"Question Set {i} - Fundamentals of Visual Computing", questions, True, False)
+                WriteQuestionsToFile(file_path_q, f"Question Set {i} - Fundamentals of Visual Computing", questions, False)
                 file_path_a = os.path.join(timestamp_string, f"Answer Set {i} - Fundamentals of Visual Computing.md")
-                WriteQuestionsToFile(file_path_a, f"Answer Set {i} - Fundamentals of Visual Computing", questions, False, True)
+                WriteQuestionsToFile(file_path_a, f"Answer Set {i} - Fundamentals of Visual Computing", questions, True)

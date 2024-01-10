@@ -33,9 +33,9 @@ What is animation?
 Putting virtual objects into motion using physical models and/or motion capture.
 ### Question
 What is fabrication?
-# Maths Recap
 ### Answer
 Turning computational models into physical 3D objects using additive (e.g. 3D printers) or subtractive (e.g. laser cutting) processes.
+# Maths Recap
 ### Question
 How is a point represented as a vector in 2D and 3D respectively?
 ### Answer
@@ -116,7 +116,7 @@ $ represents the direction of the vector normal to the plane formed by vectors $
 ### Question
 What is a matrix?
 ### Answer
-A rectangular array of numbers?
+A rectangular array of numbers.
 ### Question
 For matrices 
 $
@@ -211,13 +211,13 @@ $(\bold{A}\bold{B}\bold{C})^T = \bold{C}^T\bold{B}^T\bold{A}^T$.
 ### Question
 What are the two requirements for calculating an inverse matrix $\bold{A}^{-1}$ from $\bold{A}$ where $\bold{A}\bold{A}^{-1}=\bold{I}$.
 ### Answer
-Square matrix with non-zero determinant?
+Square matrix with non-zero determinant.
 ### Question
 How can one solve a linear system of equations $2x+3y=6$ and $4x+9y=15$ using matrices?
 ### Answer
 Express in matrix form $\bold{A}\bold{x}=\bold{b}$, calculate $\bold{A}^{-1}$. This gives $\bold{x} = \bold{A}^{-1}\bold{b}$. 
-# 2. Images & Colours
 ### Question
+# 2. Images & Colours
 What is the range of wavelengths of visible light? Which colours have the longest and shortest wavelengths?
 ### Answer
 380nm (blue) to 750nm (red).
@@ -306,8 +306,8 @@ Hue, Saturation, Value. Common for colour pickers in graphics packages - more in
 What is CIEXYZ and what is it used for?
 ### Answer
 Specifying colours and their ranges absolutely (can describe all visible colours).
-# 3. Imaging & Display
 ### Question
+# 3. Imaging & Display
 How many hours of exposure did the first surviving photograph need? What sort of year range was this?
 ### Answer
 1765-1833 - 8 hours. 
@@ -397,8 +397,8 @@ Since photons hit sensor randomly, this is inevitable.
 What is replacement noise (or *salt and pepper noise*)?
 ### Answer
 Defective sensors cause *dead pixels*. Charge leakage in long exposures cause *hot pixels*.
-# 4. Image Filtering
 ### Question
+# 4. Image Filtering
 What is quantisation?
 ### Answer
 Quantising, i.e. rounding, pixel values for use in computers. This limits precision and the number of intensity levels.
@@ -477,6 +477,13 @@ $
 1&0&-1\\
 0&-1&-2
 \end{bmatrix}
+$ or 
+$
+\begin{bmatrix}
+0&-1&-2\\
+1&0&-1\\
+2&1&0
+\end{bmatrix}
 $
 ### Question
 What is the motion blur filter matrix?
@@ -530,8 +537,8 @@ Dilation after erosion. Simplifies bright objects while avoiding shrinkage of bo
 What is closing (in morphological filtering)?
 ### Answer
 Erosion after dilation. Simplifies bright objects while avoiding expansion of boundaries caused by dilation.
-# 5. The Fourier Transform
 ### Question
+# 5. The Fourier Transform
 What is an analogue signal?
 ### Answer
 A continuous signal that contains time-varying quantities. <br>It is always smooth, carries repeated information.<br>
@@ -539,7 +546,7 @@ It is easily affected by noise and hard to analyse.
 ### Question
 What is a periodic function?
 ### Answer
-A function $f(x)$ is periodic if it is defined for all real x and if there is a positive number $T$ such that $f(xx+T)=f(x)$.
+A function $f(x)$ is periodic if it is defined for all real $x$ and if there is a positive number $T$ such that $f(x+T)=f(x)$.
 ### Question
 What is the Fourier Series?
 ### Answer
@@ -610,8 +617,8 @@ What are the applications of the Fourier Transform in images?
 - Fast linear filtering using the convolution theorem
 - Removing structured noise
 - Image compression (JPEG with DCT)
-# 6. Properties & Applications of the Fourier Transform
 ### Question
+# 6. Properties & Applications of the Fourier Transform
 What is the *linearity* property (Fourier Transform)?
 ### Answer
 $\mathcal{F}[af+bg](\omega)=a\mathcal{F}[f](\omega)+b\mathcal{F}[g](\omega)$
@@ -715,11 +722,11 @@ The Fourier Transform of an even, real-valued signal.
 How can we make audio signals and images even?
 ### Answer
 Reflecting about n=0, canceling out purely imaginary, sine-related terms.
-# 7. Sampling Theory
 ### Question
+# 7. Sampling Theory
 What is sampling?
 ### Answer
-Capturing the value of a function at specific points?
+Capturing the value of a function at specific points.
 ### Question
 What do we use to reconstruct the original continuous signal from samples?
 ### Answer
@@ -754,8 +761,8 @@ Name three types of reconstruction filters.
 How can we better downsample images to prevent aliasing? 
 ### Answer
 First apply low-pass Guassian filter to blur the image, then subsample. The filter size should double for each reduction by power of 2.
-# 8. Rendering: Action
 ### Question
+# 8. Rendering: Action
 What is an affine transform, i.e. how is it expressed?
 ### Answer
 $\bold{q}=\bold{M}\bold{p}+t$ where $\bold{p}=\begin{bmatrix}p_1\\p_2\end{bmatrix}$ and 
@@ -821,8 +828,8 @@ Points remain fixed and the coordinate system moves.
 How do we rotate about an arbitrary point?
 ### Answer
 Translate the centre of rotation to the origin, rotate about the origin then translate the centre of origin back.
-# 9. 3D Transformations
 ### Question
+# 9. 3D Transformations
 What is a reference frame?
 ### Answer
 A collection of vectors (two for 2D space, three for 3D space) such that any vector in the space can be represented with respect to the reference frame.
@@ -895,8 +902,8 @@ If we have the Sun, Earth and Moon, how would you describe the hierarchy of tran
 ### Answer
 1. Transform the Moon using the Earth frame. 
 2. Transform the Earth and Moon using the Sun's frame.
-# 10. Projection
 ### Question
+# 10. Projection
 What is parallel projection? For a point $p=\begin{bmatrix}p_1\\p_2\\p_3\\1\end{bmatrix}$ what is the associated matrix (in the world reference frame)?
 ### Answer
 In parallel/orthographic projection, the light rays are parallel. In the world frame, just drop the $z$ coordinate.<br>
@@ -933,7 +940,7 @@ $\begin{bmatrix}u \\ v \\ w\end{bmatrix}=\begin{bmatrix}wx/z \\ wy/z \\ wz/z\end
 ### Question
 What is the homogeneous matrix that represents a perspective projection (extrinsic parameters only)?
 ### Answer
-$$\bold{K}_{perspective}=\frac{z}{w}\begin{bmatrix}
+$$\bold{K}_{perspective}=\frac{w}{z}\begin{bmatrix}
 1 & 0 & 0 & 0\\
 0 & 1 & 0 & 0\\
 0 & 0 & 1 & 0\\
@@ -948,7 +955,7 @@ A camera is a rigid body, so it can be rotated and translated.
 How would you carry out a parallel/orthographic projection with a moved camera? Let $\bold{M}$ be the matrix that transforms points from the world reference frame to the camera's reference frame, and let $\bold{p}$ be the vector representing the point to be projected.
 ### Answer
 1. Transform the object from the camera frame into the world frame, i.e. $\bold{q}=\bold{M}^{-1}\bold{p}$.
-2. Project, i.e. $\bold{q^{\prime}}=\bold{K}_{perspective}\,\bold{q}$.
+2. Project, i.e. $\bold{q^{\prime}}=\bold{K}_{parallel}\,\bold{q}$.
 ### Question
 Consider a perspective camera with an image buffer. 
 What is the homogeneous 2D matrix that transforms the image plane to the image buffer? What is this matrix called?
@@ -994,8 +1001,8 @@ Image stitching (by warping images together).
 How can two or more 2D images be used to create a 3D model?
 ### Answer
 **Triangulation:** if we have a single point observed on two images, we can trace the rays back to where they intersect.
-# 11. Hidden Surface Removal
 ### Question
+# 11. Hidden Surface Removal
 Homogeneous points scale freely - what does this mean?
 ### Answer
 Homogeneous coordinates have an additional scaling factor $w$, e.g. $\begin{bmatrix}x&y&z&w\end{bmatrix}^T$. <br>
@@ -1033,7 +1040,8 @@ If the polygon is oriented **anti-clockwise**, then $\bold{n}$ points outward fr
 If the polygon is oriented **clockwise**, then $\bold{n}$ points outward from the **back face** of the polygon.<br><br>
 Therefore in this case (clockwise):<br>
 If $\bold{n}\cdot\bold{v}>0$ then the surface is facing away from the camera. ($\theta$ is between $-90\degree$ and $90\degree$)<br>
-If $\bold{n}\cdot\bold{v}<0$ then the surface is facing towards the camera. ($\theta$ is less than $-90\degree$ or greater than $90\degree$)
+If $\bold{n}\cdot\bold{v}<0$ then the surface is facing towards the camera. ($\theta$ is less than $-90\degree$ or greater than $90\degree$)<br>
+*Note that this is slightly different to what is in the slides, as they consider a normal going into the page to be $-\bold{n}$.
 ### Question
 In what scenario will a surface be forward-facing but should not be rendered?
 ### Answer
@@ -1062,8 +1070,8 @@ The height at this point is given by
 $$
 (1-a)(1-b)h_{11} + (1-a)b\,h_{12} + a(1-b)\,h_{21} + ab\,h_{22}
 $$
-# 12 Lighting
 ### Question
+# 12. Lighting
 What two main types of light are there?
 ### Answer
 Specular and diffuse.
@@ -1082,8 +1090,8 @@ Ambient lighting model
 ### Question
 Which three components of light does the standard model of light involve, and briefly what are each of these?
 ### Answer
-**Specular**: shiny surfaces have small, intense highlights.
-**Diffuse**: dull surfaces have large highlights that fall off more gradually.
+**Specular**: shiny surfaces have small, intense highlights.<br>
+**Diffuse**: dull surfaces have large highlights that fall off more gradually.<br>
 **Ambient**: accounts for light scattered equally about entire scene.
 ### Question
 What is the Lambert's Law?
@@ -1169,8 +1177,8 @@ Using one normal (per polygon) to calculate light (once) for the entire polygon.
 What is the BRDF?
 ### Answer
 The Bidirectional Reflectance Distribution Functions (BRDF) is a 4D function that takes in incoming light angle and outgoing light angle (in spherical coordinate pairs) and calculates how much light is reflected off a given material.
-# 13. Texturing Surfaces
 ### Question
+# 13. Texturing Surfaces
 What is a texture?
 ### Answer
 An image applied to a surface, which requires a mapping between points on the texture to points on the surface.
@@ -1230,8 +1238,8 @@ $3\times 16 \times(mn + \frac{1}{4}mn + \frac{1}{16}mn+\cdots)$<br>
 $= 3\times 16 \times mn(1+\frac{1}{4}+\frac{1}{16}+\cdots)$<br>
 $= 3\times 16 \times \frac{4}{3}mn$<br>
 $= 64mn$ bits or $8mn$ bytes
-# 14. Geomtric Modelling
 ### Question
+# 14. Geomtric Modelling
 What are the three most common types of model, and briefly what is each?
 ### Answer
 - **Solid**: implicit representation (used in CAD)
@@ -1264,8 +1272,8 @@ Stores all relationships between faces, edges and vertexes (easily accessible bu
 For each face, we have its three vertices and three edges.
 For each vertex, we have its connected faces and connected edges.
 For each edge, we have its two vertices and two faces.
-# 15. 2D curves
 ### Question
+# 15. 2D curves
 Outline the three main ways to represent a 2D curve, and briefly explain how each one works.
 ### Answer
 - **Explicit**: represent one axis with respect to the other. <br>
@@ -1324,8 +1332,8 @@ Curves are connected, i.e. $f(t_0)=g(t_0)$.
 For two curves $f(t)$ and $g(t)$ connected at $t_0$, what is meant by $C^{1}$ continuity?
 ### Answer
 Curves are connected smoothly, i.e. $f^{\prime}(t_0)=g^{\prime}(t_0)$.
-# 16. Bezier Curves
 ### Question
+# 16. Bezier Curves
 Express $\bold{p}(t)=\bold{x}_0+t\bold{x}_1+t^2\bold{x}_2+t^3\bold{x}_3$ in matrix notation.
 ### Answer
 $\bold{p}(t)=\begin{bmatrix}\bold{x}_3&\bold{x}_2&\bold{x}_1&\bold{x}_0\end{bmatrix}\begin{bmatrix}t^3\\t^2\\t\\1\end{bmatrix}=\bold{C}\bold{Q}(t)$
@@ -1409,8 +1417,8 @@ $$\bold{p}^{\prime}_k=\frac{\bold{p}_{k+1}-\bold{p}_{k-1}}{2}$$
 $$\bold{p}^{\prime}_0=\bold{p}_{1}-\bold{p}_0$$
 For the last point $K$:
 $$\bold{p}^{\prime}_K=\bold{p}_{K}-\bold{p}_{K-1}$$
-# 17. Surfaces & Volumes
 ### Question
+# 17. Surfaces & Volumes
 What is the formula for the explicit representation of a sphere in 3D?
 ### Answer
 $x_3=\pm\sqrt{r^2-x_1^2-x_2^2}$
@@ -1430,7 +1438,7 @@ Marching Squares.
 Suppose we want to approximate an implicit surface with a mesh. How does sampling a surface in a grid work?
 ### Answer
 - Trap the implicit surface in a grid. 
-- For each point in the grid, if $f(\bold{x})<0, the point is inside the surface, otherwise if $f(\bold{x})>0$ it is outside the surface.
+- For each point in the grid, if $f(\bold{x})<0$, the point is inside the surface, otherwise if $f(\bold{x})>0$ it is outside the surface.
 ### Question
 How many different configurations of corner values are there in 2D? (Marching Squares algorithm)
 ### Answer
