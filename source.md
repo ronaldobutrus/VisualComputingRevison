@@ -969,18 +969,16 @@ $\bold{K}=\begin{bmatrix}
 What is the $3\times4$ projection matrix that defines perspective projection (intrinsic and extrinsic parameters)?
 Let $\bold{R}$ represent the rotation of the camera and $\bold{t}$ represent its offset from the origin.
 ### Answer
-$$P=\bold{K}\begin{bmatrix}R &\vert&t\end{bmatrix}$$
-i.e.
+$$\bold{P}=\bold{K}\begin{bmatrix}\bold{R}^{-1} &\vert&-\bold{R}^{-1}\bold{t}\end{bmatrix}$$
+i.e. (with $r_{ij}$ as elements of $\bold{R}^{-1}$)
 $$
-P=\bold{K}\begin{bmatrix}
-r_{11} & r_{12} & r_{13} & t_1\\
-r_{21} & r_{22} & r_{33} & t_2\\
-r_{31} & r_{32} & r_{33} & t_3\\
+\bold{P}=\bold{K}\begin{bmatrix}
+r_{11} & r_{12} & r_{13} & -(r_{11}t_1+r_{12}t_2+r_{13}t_3)\\
+r_{21} & r_{22} & r_{33} & -(r_{21}t_1+r_{22}t_2+r_{23}t_3)\\
+r_{31} & r_{32} & r_{33} & -(r_{31}t_1+r_{32}t_2+r_{33}t_3)\\
 \end{bmatrix}
 $$
-The fourth row is often omitted, but would be $\begin{bmatrix}
-0 & 0 & 0 & 1
-\end{bmatrix}$.
+This applies the rotation $\bold{R}^{-1}$ followed by the translation $-\bold{t}$. The reason that the final column is $-\bold{R}^{-1}\bold{t}$ rather than simply $-\bold{t}$ is because the translations also need to be 'rotated'. 
 ### Question
 What is a homography?
 ### Answer
