@@ -1037,8 +1037,8 @@ This also equal to $\lvert \bold{a}\rvert\lvert \bold{b}\rvert\cos\theta$ where 
 If the polygon is oriented **anti-clockwise**, then $\bold{n}$ points outward from the **front face** of the polygon.<br>
 If the polygon is oriented **clockwise**, then $\bold{n}$ points outward from the **back face** of the polygon.<br><br>
 Therefore in this case (clockwise):<br>
-If $\bold{n}\cdot\bold{v}>0$ then the surface is facing away from the camera. ($\theta$ is between $-90\degree$ and $90\degree$)<br>
-If $\bold{n}\cdot\bold{v}<0$ then the surface is facing towards the camera. ($\theta$ is less than $-90\degree$ or greater than $90\degree$)<br>
+If $\bold{n}\cdot\bold{v}>0$ then the surface is facing towards the camera. ($\theta$ is between $-90\degree$ and $90\degree$)<br>
+If $\bold{n}\cdot\bold{v}<0$ then the surface is facing away from the camera. ($\theta$ is less than $-90\degree$ or greater than $90\degree$)<br>
 *Note that this is slightly different to what is in the slides, as they consider a normal going into the page to be $-\bold{n}$.
 ### Question
 In what scenario will a surface be forward-facing but should not be rendered?

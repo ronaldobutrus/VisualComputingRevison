@@ -24,7 +24,9 @@ NUMBER_OF_QUESTIONS_PER_SET = 20
 NUMBER_OF_SETS = 13
 GENERATE_ALL = False
 REPLACEMENT_ENABLED = False
-QUESTIONS_WITH_ANSWERS = False
+QUESTIONS_WITH_ANSWERS = True
+CHAPTERS = ["5", "6"]
+FILTER_CHAPTERS = False
 
 source_file = open("source.md", "r")
 source_lines = [r'' + line.rstrip('\n') for line in source_file]
@@ -38,14 +40,20 @@ current_question = ""
 current_answer = ""
 count = 0
 is_question = False
+current_chapter_enabled = True
 
 for line in source_lines:
     if line.startswith("# "):
         current_chapter = line[2:]
+        current_chapter_enabled = False or not FILTER_CHAPTERS
+        for c in CHAPTERS:
+            if current_chapter.startswith(c):
+                current_chapter_enabled = True
     elif line.startswith("### Question"):
         is_question = not is_question
         if current_answer != "":
-            all_questions.append(QuestionAnswer(count, current_question, current_answer, current_chapter))
+            if current_chapter_enabled:
+                all_questions.append(QuestionAnswer(count, current_question, current_answer, current_chapter))
             count += 1
             current_answer = ""
             current_question = ""

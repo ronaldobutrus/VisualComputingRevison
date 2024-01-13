@@ -1,0 +1,198 @@
+# Question Set 9 - Fundamentals of Visual Computing
+### Question 1
+For a greyscale image that is $w$ pixels wide and $h$ pixels high, what is the index in memory of the pixel at column x, row y? Assume the pixels are stored row by row.
+
+#### Answer 1:
+$y\times w + x$
+
+#### *[This question was from 2. Images & Colours]*
+<hr>
+
+### Question 2
+How would you carry out a parallel/orthographic projection with a moved camera? Let $\bold{M}$ be the matrix that transforms points from the world reference frame to the camera's reference frame, and let $\bold{p}$ be the vector representing the point to be projected.
+
+#### Answer 2:
+1. Transform the object from the camera frame into the world frame, i.e. $\bold{q}=\bold{M}^{-1}\bold{p}$.
+2. Project, i.e. $\bold{q^{\prime}}=\bold{K}_{parallel}\,\bold{q}$.
+
+#### *[This question was from 10. Projection]*
+<hr>
+
+### Question 3
+How can you convert a projected polygon into pixels?
+
+#### Answer 3:
+Scan conversion algorithm:
+- Consider each scanline, one by one.
+- Decide which pixels are 'in' and 'out' by switching between them at boundary crossings.
+
+#### *[This question was from 11. Hidden Surface Removal]*
+<hr>
+
+### Question 4
+What is the formula for the Discrete Fourier Transform (DFT)?
+
+#### Answer 4:
+$$
+F[k]=\sum_{n=0}^{N-1}{f[n]e^{-2\pi i\frac{kn}{N}}}\,\,\,\, \mathrm{for}\,k=0,1,\cdots,N-1
+$$
+
+#### *[This question was from 6. Properties & Applications of the Fourier Transform]*
+<hr>
+
+### Question 5
+What is the affine transform to scale a point by factor $a$ in the $x$-direction and $b$ in the $y$-direction?
+
+#### Answer 5:
+$M=\begin{bmatrix}
+a&0\\
+0&b\\
+\end{bmatrix}$
+
+#### *[This question was from 8. Rendering: Action]*
+<hr>
+
+### Question 6
+What is a matrix?
+
+#### Answer 6:
+A rectangular array of numbers.
+
+#### *[This question was from Maths Recap]*
+<hr>
+
+### Question 7
+What are the three most common types of model, and briefly what is each?
+
+#### Answer 7:
+- **Solid**: implicit representation (used in CAD)
+- **Voxel**: explicit representation (used in medical imaging/robotics)
+- **Surface**: parametric representation (used in games/films)
+
+#### *[This question was from 14. Geomtric Modelling]*
+<hr>
+
+### Question 8
+What does a lens do?
+
+#### Answer 8:
+It focuses parallel light onto a single focal point.
+
+#### *[This question was from 3. Imaging & Display]*
+<hr>
+
+### Question 9
+What is meant by *hidden surface removal*?
+
+#### Answer 9:
+Not depicting those parts of a scene that are not visible.
+
+#### *[This question was from 11. Hidden Surface Removal]*
+<hr>
+
+### Question 10
+Is addition of matrices commutative? (i.e. $\bold{A} + \bold{B} = \bold{B} + \bold{A}$)
+
+#### Answer 10:
+Yes
+
+#### *[This question was from Maths Recap]*
+<hr>
+
+### Question 11
+What is dilation? And what is the formula?
+
+#### Answer 11:
+Increases the width of bright objects.
+$$
+(I\oplus B)(x,y) = \max_{(i,j)\in B}I(x-i, y-j)$$
+
+#### *[This question was from 4. Image Filtering]*
+<hr>
+
+### Question 12
+What is shot noise?
+
+#### Answer 12:
+Since photons hit sensor randomly, this is inevitable.
+
+#### *[This question was from 3. Imaging & Display]*
+<hr>
+
+### Question 13
+For a complex number $z=a+bi\in\mathbb{C}$, what are the real and imaginary parts?
+
+#### Answer 13:
+$\mathrm{Re}(z) = a\in\mathbb{R}$<br>
+$\mathrm{Im}(z) = b\in\mathbb{R}$
+
+#### *[This question was from 5. The Fourier Transform]*
+<hr>
+
+### Question 14
+How do LCDs achieve colour?
+
+#### Answer 14:
+They have small RGB filters over the pixels to provide three colours. <br>Projectors use 3LCD panels to mix the light using mirrors and lens.
+
+#### *[This question was from 3. Imaging & Display]*
+<hr>
+
+### Question 15
+What do we use to reconstruct the original continuous signal from samples?
+
+#### Answer 15:
+Convolution.
+
+#### *[This question was from 7. Sampling Theory]*
+<hr>
+
+### Question 16
+What is the explicit representation of a line in 2D?
+
+#### Answer 16:
+$x_2=mx_1+c$
+
+#### *[This question was from 15. 2D curves]*
+<hr>
+
+### Question 17
+How do CCD sensors differ from CMOS sensors?
+
+#### Answer 17:
+**CCD**: serial devices where pixels are read out one at a time.<br>
+**CMOS**: each pixel contains an amplifier, so read-out can be faster.
+
+#### *[This question was from 3. Imaging & Display]*
+<hr>
+
+### Question 18
+What is the affine transform of a shear of factor $a$ in the $x$-direction and $b$ in the $y$-direction?
+
+#### Answer 18:
+$M=\begin{bmatrix}
+1&a\\
+b&1\\
+\end{bmatrix}$
+
+#### *[This question was from 8. Rendering: Action]*
+<hr>
+
+### Question 19
+What is the name of the model that represents a reflection with specular incident and diffuse reflected light?
+
+#### Answer 19:
+Lambertian reflection model
+
+#### *[This question was from 12. Lighting]*
+<hr>
+
+### Question 20
+What is a subdivision surface and what are the benefits of using subdivision surfaces?
+
+#### Answer 20:
+A subdivision surface is generated by repeatedly applying a subdivision operator onto the control polygon. These have guaranteed continuity and a flexible level of detail.
+
+#### *[This question was from 17. Surfaces & Volumes]*
+<hr>
+
