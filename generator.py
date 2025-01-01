@@ -20,9 +20,9 @@ def WriteQuestionsToFile(path, title, questions, display_a = True):
         file.write(f"#### *[This question was from {questions[i].chapter}]*\n<hr>\n\n")
     file.close()
 
-NUMBER_OF_QUESTIONS_PER_SET = 20
-NUMBER_OF_SETS = 13
-GENERATE_ALL = False
+NUMBER_OF_QUESTIONS_PER_SET = 10
+NUMBER_OF_SETS = 16
+GENERATE_ALL = True
 REPLACEMENT_ENABLED = False
 QUESTIONS_WITH_ANSWERS = True
 CHAPTERS = ["5", "6"]
@@ -68,17 +68,17 @@ for line in source_lines:
 datetime_object = datetime.utcfromtimestamp(time.time())
 timestamp_string = datetime_object.strftime('%Y%m%d%H%M%S')
 os.makedirs(timestamp_string, exist_ok=True)
-file_path = os.path.join(timestamp_string, 'All Questions - Fundamentals of Visual Computing.md')
+file_path = os.path.join(timestamp_string, 'All Questions - Natural Language Processing.md')
 
 if GENERATE_ALL:
     if QUESTIONS_WITH_ANSWERS:
-        file_path = os.path.join(timestamp_string, f"Fundamentals of Visual Computing.md")
-        WriteQuestionsToFile(file_path, f"Fundamentals of Visual Computing", all_questions)
+        file_path = os.path.join(timestamp_string, f"Natural Language Processing.md")
+        WriteQuestionsToFile(file_path, f"Natural Language Processing", all_questions)
     else:
-        file_path_q = os.path.join(timestamp_string, f"Questions - Fundamentals of Visual Computing.md")
-        WriteQuestionsToFile(file_path_q, f"Questions - Fundamentals of Visual Computing", all_questions, False)
-        file_path_a = os.path.join(timestamp_string, f"Answers - Fundamentals of Visual Computing.md")
-        WriteQuestionsToFile(file_path_a, f"Answers - Fundamentals of Visual Computing", all_questions, True)
+        file_path_q = os.path.join(timestamp_string, f"Questions - Natural Language Processing.md")
+        WriteQuestionsToFile(file_path_q, f"Questions - Natural Language Processing", all_questions, False)
+        file_path_a = os.path.join(timestamp_string, f"Answers - Natural Language Processing.md")
+        WriteQuestionsToFile(file_path_a, f"Answers - Natural Language Processing", all_questions, True)
 else:
     if REPLACEMENT_ENABLED or NUMBER_OF_QUESTIONS_PER_SET * NUMBER_OF_SETS <= len(all_questions):
         for i in range(1, NUMBER_OF_SETS + 1):
@@ -87,10 +87,10 @@ else:
                 for q in questions:
                     all_questions.remove(q)
             if QUESTIONS_WITH_ANSWERS:
-                file_path = os.path.join(timestamp_string, f"Question Set {i} - Fundamentals of Visual Computing.md")
-                WriteQuestionsToFile(file_path, f"Question Set {i} - Fundamentals of Visual Computing", questions)
+                file_path = os.path.join(timestamp_string, f"Question Set {i} - Natural Language Processing.md")
+                WriteQuestionsToFile(file_path, f"Question Set {i} - Natural Language Processing", questions)
             else:
-                file_path_q = os.path.join(timestamp_string, f"Question Set {i} - Fundamentals of Visual Computing.md")
-                WriteQuestionsToFile(file_path_q, f"Question Set {i} - Fundamentals of Visual Computing", questions, False)
-                file_path_a = os.path.join(timestamp_string, f"Answer Set {i} - Fundamentals of Visual Computing.md")
-                WriteQuestionsToFile(file_path_a, f"Answer Set {i} - Fundamentals of Visual Computing", questions, True)
+                file_path_q = os.path.join(timestamp_string, f"Question Set {i} - Natural Language Processing.md")
+                WriteQuestionsToFile(file_path_q, f"Question Set {i} - Natural Language Processing", questions, False)
+                file_path_a = os.path.join(timestamp_string, f"Answer Set {i} - Natural Language Processing.md")
+                WriteQuestionsToFile(file_path_a, f"Answer Set {i} - Natural Language Processing", questions, True)

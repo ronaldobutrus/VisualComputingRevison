@@ -1,269 +1,560 @@
-# Introduction
-### Question
+# Natural Language Processing
+### Question 1
 What is supervised learning?
-### Answer
+
+#### Answer 1:
 Machine learning with labelled data.
-### Question
+
+#### *[This question was from Introduction]*
+<hr>
+
+### Question 2
 What is unsupervised learning?
-### Answer
+
+#### Answer 2:
 Machine learning with unlabelled data.
-### Question
+
+#### *[This question was from Introduction]*
+<hr>
+
+### Question 3
 What is sequence modelling?
-### Answer
+
+#### Answer 3:
 Machine learning tasks involving labelling sequences of input, e.g. PoS tagging.
-### Question
+
+#### *[This question was from Introduction]*
+<hr>
+
+### Question 4
 What are the key (five) steps of an end-to-end IR application pipeline?
-### Answer
+
+#### Answer 4:
 1. Raw text processing
 2. Morphology
 3. Word level
 4. Syntax
 5. Semantics
-### Question
+
+#### *[This question was from Introduction]*
+<hr>
+
+### Question 5
 What is tokenisation?
-### Answer
+
+#### Answer 5:
 The task of separating a text into tokens.
-# Regular Expressions
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 6
 Name the character that represents any character except a newline.
-### Answer
+
+#### Answer 6:
 The character is `.`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 7
 Name the character that represents the start of a string.
-### Answer
+
+#### Answer 7:
 The character is `^`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 8
 Name the character that represents the end of a string.
-### Answer
+
+#### Answer 8:
 The character is `$`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 9
 Name the character that matches zero or more repetitions of the preceding regular expression.
-### Answer
+
+#### Answer 9:
 The character is `*`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 10
 Name the character that matches one or more repetitions of the preceding regular expression.
-### Answer
+
+#### Answer 10:
 The character is `+`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 11
 Name the character that matches zero or one repetitions of the preceding regular expression.
-### Answer
+
+#### Answer 11:
 The character is `?`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 12
 Name the character that matches `m` repetitions of the preceding regular expression.
-### Answer
+
+#### Answer 12:
 The character is `{m}`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 13
 Name the character that matches an empty string at the start or end of a word.
-### Answer
+
+#### Answer 13:
 The character is `\b`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 14
 Name the character that matches an empty string not at the start or end of a word.
-### Answer
+
+#### Answer 14:
 The character is `\B`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 15
 Name the character that matches any Unicode decimal digit.
-### Answer
+
+#### Answer 15:
 The character is `\d`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 16
 Name the character that matches any character except a Unicode decimal digit.
-### Answer
+
+#### Answer 16:
 The character is `\D`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 17
 Name the character that matches any Unicode whitespace character.
-### Answer
+
+#### Answer 17:
 The character is `\s`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 18
 Name the character that matches any Unicode word character (alphanumeric and underscore).
-### Answer
+
+#### Answer 18:
 The character is `\w`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 19
 Name the character that matches any Unicode non-word character.
-### Answer
+
+#### Answer 19:
 The character is `\W`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 20
 What is the difference between the `re.I` and `re.IGNORECASE` flags?
-### Answer
+
+#### Answer 20:
 The `re.I` flag is an alias for `re.IGNORECASE`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 21
 Which `re` method is used to compile a regular expression pattern into a regular expression object?
-### Answer
+
+#### Answer 21:
 The method is `re.compile()`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 22
 Which `re` method is used to match a regular expression pattern against a string?
-### Answer
+
+#### Answer 22:
 The method is `re.match()`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 23
 Which `re` method is used to search a regular expression pattern against a string?
-### Answer
+
+#### Answer 23:
 The method is `re.search()`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 24
 Which `re` method is used to split a string into a list of substrings according to a regular expression pattern?
-### Answer
+
+#### Answer 24:
 The method is `re.split()`.
-### Question
+
+#### *[This question was from Regular Expressions]*
+<hr>
+
+### Question 25
 Which `re` method is used to substitute all occurrences of a regular expression pattern with a replacement string?
-### Answer
+
+#### Answer 25:
 The method is `re.sub()`.
-# Zipf's Law
-### Question
+
+#### *[This question was from Zipf's Law]*
+<hr>
+
+### Question 26
 State Zipf's Law in simple terms.
-### Answer
+
+#### Answer 26:
 In a corpus, the frequency of a word is inversely proportional to its rank.
-### Question
+
+#### *[This question was from Zipf's Law]*
+<hr>
+
+### Question 27
 State Zipf's Law in mathematical terms.
-### Answer
+
+#### Answer 27:
 In a corpus of `N` words, the normalised frequency of the `k`-th most frequent word is given by `f_k = 1 / k`.
-### Question
+
+#### *[This question was from Zipf's Law]*
+<hr>
+
+### Question 28
 What are words with the highest frequency called?
-### Answer
+
+#### Answer 28:
 Stop words.
-### Question
+
+#### *[This question was from Zipf's Law]*
+<hr>
+
+### Question 29
 Why can stop words be removed from a corpus?
-### Answer
+
+#### Answer 29:
 According to Zipf's Law, stop words have the highest frequency and can be removed without significantly affecting the corpus.
-# Storing and Retrieving Information
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 30
 What is the difference between Large Language Models (LLMs) and Pre-Trained Language Models (PLMs)?
-### Answer
+
+#### Answer 30:
 Large Language Models (LLMs) are large, general-purpose models trained on diverse datasets.
 Pre-Trained Language Models (PLMs) are smaller models which are trained on simple tasks to learn linguistic priors, then fine-tuned or trained for a specific task. Pre-training is self-supervised.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 31
 What is a web crawler?
-### Answer
+
+#### Answer 31:
 A program that recursively downloads web pages and stores them in a database.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 32
 What is a forward index?
-### Answer
+
+#### Answer 32:
 A mapping of documents to their tokens.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 33
 What is a reversed index?
-### Answer
+
+#### Answer 33:
 A mapping of tokens to their documents.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 34
 What is a document?
-### Answer
+
+#### Answer 34:
 Any unit of text indexed in a system and available for retrieval.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 35
 What is a collection?
-### Answer
+
+#### Answer 35:
 A set of documents.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 36
 What is a term?
-### Answer
+
+#### Answer 36:
 A word or phrase which occurs in a collection and helps to locate relevant documents in a collection.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 37
 What is a query?
-### Answer
+
+#### Answer 37:
 A user's search request expressed as a set of terms.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 38
 What are morphological forms?
-### Answer
+
+#### Answer 38:
 Different forms of a word, e.g. singular and plural.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 39
 What is lemmatisation?
-### Answer
+
+#### Answer 39:
 Converting a word into its base form (lemma).
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 40
 What is stemming?
-### Answer
+
+#### Answer 40:
 Removing the suffixes from a word to form its root form (stem).
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 41
 What is an advantage of lemmatisation over stemming?
-### Answer
+
+#### Answer 41:
 Lemmatisation preserves the original word, whereas stemming may produce an incorrect word.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 42
 What is an advantage of stemming over lemmatisation?
-### Answer
+
+#### Answer 42:
 Stemming can help establish links between words, e.g. "better" and "best".
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 43
 What is a disadvantage of lemmatisation?
-### Answer
+
+#### Answer 43:
 It is computationally expensive and requires a lookup table for each language.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 44
 What is a disadvantage of stemming?
-### Answer
+
+#### Answer 44:
 Stemmers may be too aggressive and produce incorrect words.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 45
 What is a term-document vector?
-### Answer
+
+#### Answer 45:
 A vector representation of a document using the frequency of terms in the document.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 46
 What is a term-document matrix?
-### Answer
+
+#### Answer 46:
 A matrix representation of a collection using the frequency of terms in the documents.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 47
 What can we do to term-document vectors to ensure they are comparable?
-### Answer
+
+#### Answer 47:
 We can normalise them.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 48
 What is cosine similarity and what is it used for?
-### Answer
+
+#### Answer 48:
 $$
 \text{cosine similarity} = \frac{\mathbf{a} \cdot \mathbf{b}}{\|\mathbf{a}\| \|\mathbf{b}\|}
 $$
 It is used to measure the similarity between two vectors.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 49
 What is the purpose of the `tf-idf` weighting scheme?
-### Answer
+
+#### Answer 49:
 TF-IDF downweighs overly frequent terms in a collection and increases the weights of rarer terms with higher discriminatory power.
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 50
 What is the equation for TF-IDF?
-### Answer
+
+#### Answer 50:
 $$
 \text{tf-idf}(t, d) = \text{tf}(t, d) \times \text{idf}(t)
 $$
 where `tf(t, d)` is the term frequency of term `t` in document `d` and `idf(t)` is the inverse document frequency of term `t`.  
-### Question
+
+#### *[This question was from Storing and Retrieving Information]*
+<hr>
+
+### Question 51
 What is the equation for inverse document frequency?
-### Answer
+
+#### Answer 51:
 $$
 \text{idf}(t) = \log \left( \frac{N}{df(t)} \right)
 $$
 where `N` is the number of documents in the collection and `df(t)` is the document frequency of term `t`.
-# Performance Metrics
-### Question
+
+#### *[This question was from Performance Metrics]*
+<hr>
+
+### Question 52
 What is Precision@k?
-### Answer
+
+#### Answer 52:
 Precision@k is an algorithm which returns the precision of the top `k` results.
-### Question
+
+#### *[This question was from Performance Metrics]*
+<hr>
+
+### Question 53
 What is P@k?
-### Answer
+
+#### Answer 53:
 P@k is given by the proportion of relevant documents in the returned k results.
-### Question
+
+#### *[This question was from Performance Metrics]*
+<hr>
+
+### Question 54
 What is Mean P@k?
-### Answer
+
+#### Answer 54:
 $$
 \mathrm{Mean\ P@k}=\sum_{i}\frac{P_i@k}{\mathrm{number\ of\ queries}}
 $$
-### Question
+
+#### *[This question was from Performance Metrics]*
+<hr>
+
+### Question 55
 What is the Reciprocal Rank (RR)?
-### Answer
+
+#### Answer 55:
 $$
 \frac{1}{\mathrm{rank\ of\ first\ relevant\ document\ in\ ordered\ list}}
 $$
-### Question
+
+#### *[This question was from Performance Metrics]*
+<hr>
+
+### Question 56
 What is Mean Reciprocal Rank (MRR) and what does it measure?
-### Answer
+
+#### Answer 56:
 $$
 \mathrm{Mean\ Reciprocal\ Rank}=\sum_{i}\frac{RR_i}{\mathrm{number\ of\ queries}}
 $$
 MRR measures how high, on average, the algorithm places the first relevant document that it returns.
-# Sequence Modelling
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 57
 What is Part of Speech (PoS) tagging?
-### Answer
+
+#### Answer 57:
 The task of labelling each word in a sentence with its part of speech.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 58
 What is the Markov Assumption?
-### Answer
+
+#### Answer 58:
 The assumption that the probability of a word depends only on the previous word.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 59
 What can we use to model the underlying sequence of hidden states that produced our observations?
-### Answer
+
+#### Answer 59:
 Hidden Markov Models (HMMs).
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 60
 What are the five components of an HMM?
-### Answer
+
+#### Answer 60:
 $S=s_1,s_2,\cdots,s_n$ is a set of states (parts of speech)
 
 $A=a_{11},a_{12},\cdots,a_{N1},\cdots,a_{NN}$ is a transition probability matrix (between states)
@@ -273,19 +564,34 @@ $\pi=\pi_1,\pi_2,\cdots,\pi_n$ is an initial probability distribution over state
 $O=o_1,o_2,\cdots,o_T$ is a sequence of $T$ observations (words)
 
 $B=b_i\left(o_t\right)$ is a sequence of observation likelihoods (emission probabilities), expressing the probability of an observation $o_t$ being generated from state $s_i$
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 61
 What is Bayes' Theorem?
-### Answer
+
+#### Answer 61:
 $$
 P\left(A\mid B\right) = \frac{P\left(B\mid A\right) P\left(A\right)}{P\left(B\right)}
 $$
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 62
 What is the output independence assumption?
-### Answer
+
+#### Answer 62:
 The assumption that the probability of an observation depends only on the state that produced it.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 63
 The goal of decoding is to find the most likely sequence of hidden states that produced a sequence of observations. Derive the equation for the most likely sequence of hidden states $\hat{t}_{1:n}$ given a sequence of observations $w_{1:n}$.
-### Answer
+
+#### Answer 63:
 $$
 S=t_1,t_2,\cdots,t_T
 $$
@@ -312,165 +618,342 @@ Therefore,
 $$
 {\hat{t}}_{1:n}={\mathrm{argmax}}_{t_1,\cdots,t_n}\prod_{i=1}^{n}{P\left(w_i\middle| t_i\right)P\left(t_i\middle| t_{i-1}\right)}
 $$
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 64
 If we do not have a model for the transition probabilities and emission probabilities, what can we do to estimate these?
-### Answer
+
+#### Answer 64:
 By performing statistical analysis of our training data.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 65
 What is the Viterbi algorithm?
-### Answer
+
+#### Answer 65:
 A dynamic programming algorithm for finding the most likely sequence of hidden states that produced a sequence of observations.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 66
 What is the equation for the Viterbi algorithm at step `t` for previous state `i` and current state `j` given the observation `o_t` for the current state?
-### Answer
+
+#### Answer 66:
 $$
 V_t\left(j\right)=\text{max}_{i=1}^N \; V_{t-1}\left(i\right)a_{ij}b_j\left(o_t\right)
 $$
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 67
 What are Noun Phrases (NPs)?
-### Answer
+
+#### Answer 67:
 A sequence of words that contain a noun and surrounding words, and can fulfil the function of a noun in a sentence.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 68
 What is a constituent?
-### Answer
+
+#### Answer 68:
 A constituent is a sequence of words that can fulfil the function of a part of a sentence.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 69
 In a constituent, what is the head and what are the dependents?
-### Answer
+
+#### Answer 69:
 The head is the main noun in the constituent, and the dependents are the surrounding words.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 70
 What is syntactic constituency?
-### Answer
+
+#### Answer 70:
 The idea that groups of words can behave as single units or constituents.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 71
 What is the subject of a sentence?
-### Answer
+
+#### Answer 71:
 The main participant of the action.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 72
 What is the object of a sentence?
-### Answer
+
+#### Answer 72:
 The participant to whicht the action is applied.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 73
 What is an indirect object?
-### Answer
+
+#### Answer 73:
 A participant of the action that is not the main participant.
-### Question
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 74
 What is a Context Free Grammar (CFG) and what is it defined by?
-### Answer
+
+#### Answer 74:
 A CFG is a mathematical system for modelling constituent structure in a language.
 It is defined by a set of non-terminal symbols, a set of terminal symbols (words), a set of production rules, and a start symbol.
-### Question
-# Syntactic Analysis
+
+#### *[This question was from Sequence Modelling]*
+<hr>
+
+### Question 75
 What is parsing?
-### Answer
+
+#### Answer 75:
 The task of producing a tree structure that represents the syntactic structure of a sentence.
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 76
 What is chunking?
-### Answer
+
+#### Answer 76:
 The process of identifying and classifying non-overlapping segments of a sentence that constitute the basic non-recursive phrases corresponding to the major parts of speech (NPs, PPs, VPs, etc.)
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 77
 What is bottom-up parsing?
-### Answer
+
+#### Answer 77:
 Bottom-up parsing starts from terminal symbols, assigns PoS categories and combines them into further constituents. 
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 78
 What is an advantage and disadvantage of bottom-up parsing?
-### Answer
+
+#### Answer 78:
 While we only need to consider constituents compatible with the input, we need to keep track of all possible rules and subtrees even if they don’t result in S.
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 79
 What is top-down parsing?
-### Answer
+
+#### Answer 79:
 Top-down parsing starts from root non-terminal S and expands the tree downwards until the terminal words are reached. 
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 80
 What is an advantage and disadvantage of top-down parsing?
-### Answer
+
+#### Answer 80:
 While we only need to consider rules compatible with a well-formed sentence rooted in S, we may consider rules along the way that do not lead to the input.
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 81
 What is the Early Parsing Algorithm?
-### Answer
+
+#### Answer 81:
 The Earley parsing algorithm tries to recursively apply rules until the root non-terminal is fully processed or there is no input remaining to process.
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 82
 What are the core components of the Early Parsing Algorithm and how do they work?
-### Answer
+
+#### Answer 82:
 It keeps track of the step ID, the rule for the grammar, the covered span of the sentence by this rule, rule IDs for sub-constituents and the ID of the word being processed. 
 
 It has three stages: 
 * The predictor considers the rules and tries to expand non-terminals waiting to be expanded (with a • to their left).
 * The scanner considers any non-terminals waiting to be expanded which are consistent with the input sentence.
 * The completer propagates fully explored non-terminals.
-### Question
+
+#### *[This question was from Syntactic Analysis]*
+<hr>
+
+### Question 83
 What is dependency parsing and how does it relate to constituency parsing?
-### Answer
+
+#### Answer 83:
 The goal of dependency parsing is to establish directed binary grammatical relations that hold among words of the input:
 * The root node explicitly marks the root of the construction
 * The heads determine the nature of the expression
 * Other words are dependents.
 ![alt text](image.png)
-# Lexical Semantics
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 84
 What is lexical semantics?
-### Answer
+
+#### Answer 84:
 A branch of linguistics and NLP that deals with word senses.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 85
 What is WordNet?
-### Answer
+
+#### Answer 85:
 WordNet is the largest, most comprehensive and most widely used database of lexical relations.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 86
 What does each word in WordNet have?
-### Answer
+
+#### Answer 86:
 A gloss (definition) and a synset (synonymy set).
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 87
 What is a synset and how are they organised?
-### Answer
+
+#### Answer 87:
 A synset is a synonymy set. They are organised hierarchically (e.g. entity, physical entity, organism, animal, mammal, dog)
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 88
 What is homonymy?
-### Answer
+
+#### Answer 88:
 Homonymy is the phenomenon where a single word has multiple meanings.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 89
 What are homophones?
-### Answer
+
+#### Answer 89:
 Homophones are words that sound the same but have different meanings.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 90
 What is a polysemy?
-### Answer
+
+#### Answer 90:
 A polysemy is a word that has multiple meanings.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 91
 What is a synonym?
-### Answer
+
+#### Answer 91:
 A synonym is a word with the same or nearly the same meaning as another word.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 92
 What is a hyponym?
-### Answer
+
+#### Answer 92:
 A hyponym is a word that is more specific than another word.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 93
 What is a hypernym?
-### Answer
+
+#### Answer 93:
 A hypernym is a word that is more general than another word.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 94
 What is metonymy?
-### Answer
+
+#### Answer 94:
 Metonymy is the use of a word to refer to something else that is closely associated with it.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 95
 What is antonymy?
-### Answer
+
+#### Answer 95:
 Antonymy holds for words with opposite meaning. Though they might be close in meaning, they likely differ along a dimension.
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 96
 What is entailment?
-### Answer
+
+#### Answer 96:
 Entailment states that what happens to hypernyms, happens to hyponyms (but not necessarily the other way around).
-### Question
+
+#### *[This question was from Lexical Semantics]*
+<hr>
+
+### Question 97
 What is a semantic field?
-### Answer
+
+#### Answer 97:
 A semantic field is a set of words that are related to each other by some semantic relation.
-# Classification
-### Question
+
+#### *[This question was from Classification]*
+<hr>
+
+### Question 98
 What is feature selection and feature weighting?
-### Answer
+
+#### Answer 98:
 Feature selection involves identifying the most informative among potential features (e.g. by removing stop words).
 Feature weighting and normalisation involve weighting the most informative among remaining features heavier (e.g. using TF-IDF).
-### Question
+
+#### *[This question was from Classification]*
+<hr>
+
+### Question 99
 Which equation is the Naive Bayes algorithm based on for classification?
-### Answer
+
+#### Answer 99:
 $$
 P\left(class\middle| c o n t e n t\right)=\frac{P\left(content\middle| c l a s s\right)P\left(class\right)}{P\left(content\right)}
 $$
@@ -479,122 +962,220 @@ where
 * $P\left(class\right)$ is the prior probability
 * $P\left(content\middle| c l a s s\right)$ is the likelihood
 * $P\left(content\right)$ is the probability of the data
-### Question
+
+#### *[This question was from Classification]*
+<hr>
+
+### Question 100
 How can we apply Bayes' Theorem to a classification task
 $
 \hat{y}=\mathrm{argmax}_Y P\left(Y\middle| X\right)
 $?
-### Answer
+
+#### Answer 100:
 $$
 \hat{y}=\mathrm{argmax}_Y P\left(Y\middle| X\right)\\
 =\mathrm{argmax}_Y\frac{P\left(X\middle| Y\right)P\left(Y\right)}{P\left(X\right)}\\
 =\mathrm{argmax}_YP\left(X\middle| Y\right)P\left(Y\right)
 $$
 The maximum a posteriori (MAP) decision rule removes the denominator because the probability of the content is constant amongst the content
-### Question
+
+#### *[This question was from Classification]*
+<hr>
+
+### Question 101
 What is the Naive assumption?
-### Answer
+
+#### Answer 101:
 The naïve (independence) assumption states that the occurrence of each feature given the class is independent of the occurrence of any other feature in the class.
-# Classification Metrics
-### Question
+
+#### *[This question was from Classification Metrics]*
+<hr>
+
+### Question 102
 What is accuracy given by?
-### Answer
+
+#### Answer 102:
 $$
 \text{accuracy}=\frac{\text{correct predictions}}{\text{total predictions}}
 $$
-### Question
+
+#### *[This question was from Classification Metrics]*
+<hr>
+
+### Question 103
 What is precision given by?
-### Answer
+
+#### Answer 103:
 $$
 \text{precision}=\frac{\text{true positives}}{\text{predicted positives}}
 $$
-### Question
+
+#### *[This question was from Classification Metrics]*
+<hr>
+
+### Question 104
 What is recall given by?
-### Answer
+
+#### Answer 104:
 $$
 \text{recall}=\frac{\text{true positives}}{\text{actual positives}}
 $$
-### Question
+
+#### *[This question was from Classification Metrics]*
+<hr>
+
+### Question 105
 What is F1 given by?
-### Answer
+
+#### Answer 105:
 The harmonic mean of precision and recall.
 $$
 \text{F1}=\frac{2\times\text{precision}\times\text{recall}}{\text{precision}+\text{recall}}
 $$
-# Word Embeddings
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 106
 What are the three connotations carried by words and how can this be used for representation?
-### Answer
+
+#### Answer 106:
 * *Valence* is the pleasantness of the stimulus
 * *Arousal* is the intensity of the emotion provoked by the stimulus
 * *Dominance* is the degree of control exerted by the stimulus
 
 This can be used for representation by using a three-dimensional vector to represent the word.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 107
 What is distributional semantics and how can this be used for representation?
-### Answer
+
+#### Answer 107:
 Distributional semantics is a method of representing words in a way that captures their meaning based on the contexts in which they appear.
 
 A word can be represented by a point vector in a multi-dimensional semantic space, where the word’s meaning is distributed amongst its neighbours according to their co-occurrence within a specified context window.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 108
 What is the difference between sparse and dense vectors?
-### Answer
+
+#### Answer 108:
 Sparse vectors are based on the co-occurrence of words within a context window, whereas dense vectors are based on the distribution of words within a semantic space (i.e. embeddings).
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 109
 How can we represent a phrase using compositional semantics?
-### Answer
+
+#### Answer 109:
 Methods of compositional semantics allows us to derive the representation of a phrase by applying a function to the constituent word vectors, i.e. $p = f(u, v)$
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 110
 What is Pointwise Mutual Information (PMI) and what is the equation for it?
-### Answer
+
+#### Answer 110:
 Pointwise Mutual Information (PMI) is a measure of how often two events x and y occur (given some relation), compared to what we would expect if they were independent.
 $$
 \text{PMI}(w, c) = \log \frac{P(w, c)}{P(w)P(c)}
 $$
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 111
 What is Positive PMI (PPMI)?
-### Answer
+
+#### Answer 111:
 Positive PMI (PPMI) is a variant of PMI that only considers the co-occurrence of words that occur together more than expected by chance.
 $$
 \text{PPMI}(w, c) = \max\left(0, \text{PMI}(w, c)\right)
 $$
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 112
 What does word analogy mean and how can it be used for representation?
-### Answer
+
+#### Answer 112:
 Word analogy is the task of finding the relationship between two words, e.g. king is to queen as man is to woman.
 
 This can be used for representation by using a word analogy task to learn a vector space model of word meaning.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 113
 Which methods can we use to reduce the dimensionality of our vector space model?
-### Answer
+
+#### Answer 113:
 Principle Component Analysis (PCA) can be used with Singular Value Decomposition (SVD) to identify dimensions with the most variance, and therefore reduce the dimensionality of word representations. This is computationally expensive.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 114
 What is the continuous skip-gram model?
-### Answer
+
+#### Answer 114:
 The continuous skip-gram model is a neural network model that learns word embeddings by predicting the context of a word in a sentence.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 115
 Is the continuous skip-gram model supervised or unsupervised?
-### Answer
+
+#### Answer 115:
 The continuous skip-gram model is unsupervised (effectively self-supervised).
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 116
 Why is the continuous skip-gram model self-supervised?
-### Answer
+
+#### Answer 116:
 The target word $t$ and context word $c$ are treated as a positive example
 
 The model randomly samples non-context words as a negative example
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 117
 How does the continuous skip-gram model learn word embeddings?
-### Answer
+
+#### Answer 117:
 A logistic regression classifier is trained to distinguish between them, generating a linear-regression-style way to produce probabilities calculated using the sigmoid of their dot product.
 
 Learned weights are used as embeddings for target word $t$.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 118
 How many embeddings are there in the continuous skip-gram model, and how do we find the single embedding for a word?
-### Answer
+
+#### Answer 118:
 There are two embeddings per word, as a target and as a context, and the final embedding is the sum of the two, i.e. $t_i=w_i+c_i$.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 119
 What does the continuous skip-gram model use to calculate the probability of a positive example?
-### Answer
+
+#### Answer 119:
 The classifier calculates the probability that $c$ is a context word for $w$ as:
 $$
 P\left(+\middle| w,c\right)=\sigma\left(c\cdot w\right)=\frac{1}{e^{-c\cdot w}}
@@ -603,13 +1184,23 @@ $$
 P\left(-\middle| c,w\right)=1-\sigma\left(c\cdot w\right)
 $$
 The trained weights therefore provide a linear regression-style way to produce these probabilities.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 120
 How do we extend the probability function to a set of context words?
-### Answer
+
+#### Answer 120:
 $$P\left(+\middle| w,c_{1:L}\right)=\prod_{i=1}^{L}\sigma\left(-c_i\cdot w\right)$$
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 121
 What is the loss function for the continuous skip-gram model?
-### Answer
+
+#### Answer 121:
 The goal of the model is to update the randomly initialised embeddings so that similarity in each $\left(w,c_{pos}\right)$ embedding is maximised and in $\left(w,c_{neg}\right)$ is minimised, using stochastic gradient descent.
 
 The loss function $L_{CE}$ is used:
@@ -622,74 +1213,148 @@ $$
 $$
 =\left[\sigma\left(c_{pos}\cdot w\right)+\sum_{i=1}^{k}log\left(\log{\sigma}\left(-c_{neg_i}\cdot w\right)\right)\right]
 $$
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 122
 What are three advantages of dense word embeddings over sparse word embeddings?
-### Answer
+
+#### Answer 122:
 * Shorter vectors are easier to work with and learn weights for
 * Smaller parameter space helps improve generalisation
 * Dense vectors are better at capturing synonymy
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 123
 What is one advantage of sparse word embeddings over dense word embeddings?
-### Answer
+
+#### Answer 123:
 Sparse word embeddings are better at capturing polysemy.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 124
 What is the paraphrasing task?
-### Answer
+
+#### Answer 124:
 The paraphrasing task tests whether one word/phrase can replace another word/phrase in a given context.
-### Question
+
+#### *[This question was from Word Embeddings]*
+<hr>
+
+### Question 125
 What is the word analogy task?
-### Answer
+
+#### Answer 125:
 The analogy task solves the question of $a$ is to $b$ what $a^\ast$ is to what?
 $$
 b\ast={argmax}_xdistance\left(x,a^\ast-a+b\right)
 $$
-# Recurrent Neural Networks
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 126
 What are Recurrent Neural Networks (RNNs)?
-### Answer
+
+#### Answer 126:
 In Recurrent Neural Networks (RNNs) the input to a hidden layer h_t at time t is expanded with the value of the hidden layer from the preceding time step, h_{t-1}. 
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 127
 How do the parameters in a Recurrent Neural Network (RNN) compare to those in a feedforward neural network?
-### Answer
+
+#### Answer 127:
 RNNs must learn an extra parameter, the matrix of weights for the previous hidden layer.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 128
 When does the exploding gradient problem occur in RNNs?
-### Answer
+
+#### Answer 128:
 The exploding gradient problem occurs when the model focuses too much on the immediate context.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 129
 When does the vanishing gradient problem occur in RNNs?
-### Answer
+
+#### Answer 129:
 The vanishing gradient problem occurs when the model ignores the immediate context.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 130
 What are LSTMs?
-### Answer
+
+#### Answer 130:
 Long Short Term Memory (LSTM) networks are a type of RNN that use a memory cell to store information from previous time steps.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 131
 What are Named Entities?
-### Answer
+
+#### Answer 131:
 Named entities are groups of words that can be referred to with a proper noun.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 132
 What is Named Entity Recognition (NER)?
-### Answer
+
+#### Answer 132:
 Named Entity Recognition (NER) refers to labelling a sequence with its named entities.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 133
 What are two schemes for NER, and what do they mark?
-### Answer
+
+#### Answer 133:
 * The BIO scheme marks the beginning (B), inside (I) and outside (O) tokens.
 * The BIOES scheme also marks the end (E) tokens and single-token entities (S).
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 134
 How can RNNs be used for NER and PoS?
-### Answer
+
+#### Answer 134:
 RNNs can be used to output a PoS or NER tag for each element in the input sequence.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 135
 What can be used to learn a function to map global features of an input to a label?
-### Answer
+
+#### Answer 135:
 Linear Chain Conditional Random Fields (CRFs) learns a function $f$ that maps $K$ global features of an input $x$ to the output label $y$.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 136
 Derive the equation for the output sequence $Y$ given the input sequence $X$ and the $K$ global features for a CRF.
 
 Start with $Y=argmax_{Y\in\mathcal{Y}}P\left(Y\middle| X\right)$
-### Answer
+
+#### Answer 136:
 The model assigns each of the features $F_k$ with a weight $w_k$, so
 $$
 P\left(Y\middle| X\right)=\frac{\exp{\left(\sum_{k=1}^{K}{w_kF_k\left(X,Y\right)}\right)}}{\sum_{Y^\prime\in\mathcal{Y}} \exp{\left(\sum_{k=1}^{K}{w_kF_k\left(X,Y^\prime\right)}\right)}}
@@ -706,55 +1371,105 @@ Since exp does not affect the argmax, we have
 $$
 Y=\argmax_{y\in\mathcal{Y}}\sum_{k=1}^{K}{\sum_{i=1}^{n}w_kf_k\left(y_{i-1},y_i,X,i\right)}
 $$
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 137
 How can an RNN be used for classification?
-### Answer
+
+#### Answer 137:
 In an RNN, the final hidden state accumulates history from the whole sequence. Often, a further FNN with a SoftMax is applied to output a probability distribution over the class labels.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 138
 What is machine translation?
-### Answer
+
+#### Answer 138:
 Machine Translation (MT) consists of translating a sentence $x$ from a source language to a sentence $y$ in a target language.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 139
 What is neural machine translation?
-### Answer
+
+#### Answer 139:
 Neural Machine Translation (NMT) is MT using neural networks, which are end-to-end differentiable.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 140
 What is the format of the input to an RNN?
-### Answer
+
+#### Answer 140:
 The input sentence is divided into pieces, with a preceding \<bos> and ending \<eos> tag.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 141
 What is an encoding and how is it used in an RNN as input?
-### Answer
+
+#### Answer 141:
 An encoding is a representation of the input sentence as a sequence of vectors, that is a representation of an idea or thought that will contribute to generated output.
 
 The encoding is used as the initial hidden state of the RNN.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 142
 What is the encoder-decoder architecture?
-### Answer
+
+#### Answer 142:
 The encoder-decoder architecture is a neural network that consists of an encoder and a decoder.
 
 The encoder reads the input sentence and produces an encoding.
 
 The decoder reads the encoding and generates the output sentence.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 143
 What do conditional language models maximise?
-### Answer
+
+#### Answer 143:
 Conditional language models maximise the probability of the output sentence given the source $x$.
 
 $$
 P\left(y\middle| x\right)=\prod_{i=1}^{n}P\left(y_i\middle| y_{<i},x\right)
 $$
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 144
 What does the decoder output vector at a point in time represent? How do we use this to generate the output?
-### Answer
+
+#### Answer 144:
 The decoder output at a point is the representation of the input sentence (which is input as chunks) up to that point, as well as the source context. It is then fed through a linear layer and SoftMax to produce a probability distribution over the vocabulary to sample the output from.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 145
 Which type of loss function is used for training a Seq2Seq model?
-### Answer
+
+#### Answer 145:
 The cross-entropy loss function is used for training a Seq2Seq model. It is given by $-\log{P\left(correct\right)}$, where $p(correct)$ is the predicted probability of the correct output (that is, from the SoftMax output of the decoder).
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 146
 At each step of the decoder, we need to take the `argmax` of the output distribution to get the next word. How do we do this efficiently, step-by-step?
-### Answer
+
+#### Answer 146:
 To take the `argmax` efficiently at each step of the decoder, we use a **beam search**:
 * $k$ is the beam size (typically 5-10), which represents the ‘width’ of the search
 * At each step, keep track of the $k$ most probable partial translations (hypotheses)
@@ -763,13 +1478,23 @@ To take the `argmax` efficiently at each step of the decoder, we use a **beam se
 * A hypothesis is complete when it produces <eos>.
 * A beam search is complete when it reaches a predefined timestep $T$ or has a predefined $n$ completed hypotheses
 
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 147
 What is attention and what is it used for?
-### Answer
+
+#### Answer 147:
 Since it is hard to compress a sentence into an encoding, and different information may be relevant at different steps in the decoder, attention allows the decoder to focus on different parts of the input sentence at different times.
-### Question
+
+#### *[This question was from Recurrent Neural Networks]*
+<hr>
+
+### Question 148
 How are attention scores calculated and applied?
-### Answer
+
+#### Answer 148:
 At each step of the decoder, we have a direct connection to the encoder to focus on a particular part of the source sequence
 * We calculate attention scores for each encoder hidden state, apply a SoftMax and calculate a weighted sum. 
 * We concatenate this with the decoder hidden state and produce an output.
@@ -778,105 +1503,206 @@ At each step of the decoder, we have a direct connection to the encoder to focus
     * multiplication with learned weights	$score_i=s^TWh_i$
     * addition with learned hidden state and combination weights
 $$score_i=v^Ttanh{\left(W_1h_i+W_2s\right)}$$
-# Transformers
-### Question
+
+#### *[This question was from Transformers]*
+<hr>
+
+### Question 149
 What two things does a transformer do that an RNN does not?
-### Answer
+
+#### Answer 149:
 * Parallel processing of sentence (faster pre-training, leading to better downstream performance)
 * Lower computational complexity per layer 
-### Question
+
+#### *[This question was from Transformers]*
+<hr>
+
+### Question 150
 What type of attention is used in the transformer and what is its equation?
-### Answer
+
+#### Answer 150:
 Self attention (scaled dot-product) is used 
 $$
 \text{Attention}\left(Q,K,V\right)=\text{softmax}\left(\frac{QK^T}{\sqrt{d_k}}\right)V
 $$
-### Question
+
+#### *[This question was from Transformers]*
+<hr>
+
+### Question 151
 What is masked self-attention and how is it used in the transformer?
-### Answer
+
+#### Answer 151:
 In the encoder, each token gathers context from other tokens to update its representation.
 In the decoder, we mask future tokens in the inference stage (but not during training).
-### Question
+
+#### *[This question was from Transformers]*
+<hr>
+
+### Question 152
 What is multi-head attention and how is it used in the transformer?
-### Answer
+
+#### Answer 152:
 Multiple (independent) heads concatenate their attention scores and a linear layer is applied to calculate the attention.
-# Evaluation of Language Models
-### Question
+
+#### *[This question was from Evaluation of Language Models]*
+<hr>
+
+### Question 153
 State and describe briefly two common evaluation metrics for machine translation models.
-### Answer
+
+#### Answer 153:
 * BLEU (based on n-gram precision)
 * BERTScore (based on cosine similarity with contextual embeddings from a pre-trained BERT model)
-### Question
+
+#### *[This question was from Evaluation of Language Models]*
+<hr>
+
+### Question 154
 When are automatic and manual evaluation methods used, and what are some common methods?
-### Answer
+
+#### Answer 154:
 Automatic metrics are used at development time, and manual evaluation is commonly used at test time. Automatic metrics include BLEU and BERTScore. Manual metrics include Likert scales, direct assessment and relative ranking.
-### Question
+
+#### *[This question was from Evaluation of Language Models]*
+<hr>
+
+### Question 155
 What are two common problems with language models?
-### Answer
+
+#### Answer 155:
 * Bias due to only the most frequent data being stored.
 * Hallucination by generating data that is not present in the training data.
-### Question
+
+#### *[This question was from Evaluation of Language Models]*
+<hr>
+
+### Question 156
 What is perplexity and how is it calculated?
-### Answer
+
+#### Answer 156:
 Perplexity is a measure of how well a language model predicts a sequence of words. It is calculated as the inverse of the probability of the test sequence.
 $$
 PP\left(W\right)=\sqrt[N]{\frac{1}{P\left(w_1,w_2,\cdots,w_N\right)}}
 $$
-# Variants of LLMs
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 157
 What are encoder-only models used for?
-### Answer
+
+#### Answer 157:
 Encoder-only architectures are used for classification (e.g. Bidirectional Encoder Representations from Transformers – BERT, RoBERTa).
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 158
 What are decoder-only models used for?
-### Answer
+
+#### Answer 158:
 Decoder-only architectures are used for generation (e.g. Generative Pre-Trained Transformer – GPT).
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 159
 What is emergence and when does it occur?
-### Answer
+
+#### Answer 159:
 Emergence is when quantitative changes in a system result in qualitative changes in behaviour.
 As the size of a model and training data size increase, the performance of the model increases at a phase transition. At about 10bn parameters, it becomes able to solve problems it could not solve before, e.g. modular arithmetic.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 160
 What is Retrieval Augmented Generation (RAG)?
-### Answer
+
+#### Answer 160:
 Retrieval Augmented Generation (RAG) is a method of generating text by retrieving relevant information from a knowledge base, splitting them into chunks, encoding as vectors, retrieving the top k chunks based on semantic similarity and using this additional context to generate the output.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 161
 What is in-context learning?
-### Answer
+
+#### Answer 161:
 In-context learning is a method of learning from a small number of examples by providing the model with a set of examples and then asking it to predict the output for a new example.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 162
 What is chain of thought prompting?
-### Answer
+
+#### Answer 162:
 Chain of thought prompting encourages models to generate a rationale, increasing the likelihood of a correct answer (this is in-context learning).
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 163
 What is self-consistency?
-### Answer
+
+#### Answer 163:
 Self-consistency involves sampling a diverse range of reasoning paths and taking the most probable path to aggregate the final answer.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 164
 What is least-to-most prompting?
-### Answer
+
+#### Answer 164:
 Least-to-most prompting (problem decomposition) involves decomposing a question into sub-questions, solving the sub-questions (with access to the previous answer as context) and producing a final answer.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 165
 What is problem decomposition?
-### Answer
+
+#### Answer 165:
 The same as least-to-most prompting.
 Least-to-most prompting (problem decomposition) involves decomposing a question into sub-questions, solving the sub-questions (with access to the previous answer as context) and producing a final answer.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 166
 What is program of thought prompting?
-### Answer
+
+#### Answer 166:
 Program of thought prompting involves generating a computer program to compute the answer to a complex problem.
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 167
 What are four things that make up a good prompt?
-### Answer
+
+#### Answer 167:
 * Premise (context)
 * Hypothesis (question)
 * Reasoning example (how to solve the problem)
 * Answer options (the possible solutions)
-### Question
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
+### Question 168
 What are five common methods of improving LLM behaviour?
-### Answer
+
+#### Answer 168:
 * Retrieval Augmented Generation (RAG)
 * Chain of thought prompting
 * Self-consistency
 * Least-to-most prompting
 * Program of thought prompting
+
+#### *[This question was from Variants of LLMs]*
+<hr>
+
